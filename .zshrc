@@ -122,6 +122,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_profile
 export PATH=~/Library/Python/3.7/bin:$PATH
+export PATH=/Users/jordan.spangenberg/.cargo/bin:$PATH
 
 alias zshconfig="vim ~/.zshrc"
 
@@ -156,3 +157,11 @@ source ~/.iterm2_shell_integration.zsh
 
 export NOTES='/Users/jordan.spangenberg/Documents/notes'
 #
+# Bat is like cat, but better
+# This is the theme for syntax highlighting
+BAT_THEME="ansi-dark"
+
+# z is a quick directory switcher
+eval "$(lua ~/.clitools/z.lua/z.lua --init zsh)"
+
+
