@@ -139,3 +139,11 @@ endfunction
 
 " Find the alternate file for the current path and open it
 nnoremap <leader>. :w<cr>:call AltCommand(expand('%'), ':e')<cr>
+
+" Toggle nerd tree with Ctrl-w + n
+noremap <C-w>n :NERDTreeToggle<cr>
+
+" Split hotkeys
+noremap <C-w>- :split<cr>
+noremap <C-w>\| :vsplit<cr>
+

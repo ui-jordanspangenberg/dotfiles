@@ -164,4 +164,8 @@ BAT_THEME="ansi-dark"
 # z is a quick directory switcher
 eval "$(lua ~/.clitools/z.lua/z.lua --init zsh)"
 
+source "$HOME/.bashrc"
 
+alias lol='neofetch | lolcat'
+
+stty erase '^?'
